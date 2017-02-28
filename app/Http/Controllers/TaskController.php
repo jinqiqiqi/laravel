@@ -12,7 +12,7 @@ class TaskController extends Controller
 {
     function index() {
     	$tasks = Task::orderBy('created_at', 'asc')->get();
-        Log::info($task);
+        Log::info('testing', ['task' => $tasks]);
 
         return view('tasks.index', [
         	'tasks' => $tasks
