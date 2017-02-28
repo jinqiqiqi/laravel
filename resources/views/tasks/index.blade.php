@@ -22,34 +22,37 @@
         </form>
     </div>
 
-    @if(count($tasks) > 0)
-        <div class="panel panel-default">
-            <div class="panel-heading">Current Tasks</div>
+    <div class="panel panel-default">
+        <div class="panel-heading">Current Tasks</div>
 
-            <div class="panel-body">
-                <table class="table table-striped task-table">
-                    <thead>
-                        <th>Task</th>
-                        <th>&nbsp;</th>
-                    </thead>
-                    <tbody>
-                        @foreach($tasks as $task)
+        <div class="panel-body">
+            <table class="table table-striped task-table">
+                <thead>
+                    <th>Task</th>
+                    <th>&nbsp;</th>
+                </thead>
+                <tbody>
+                        @if(count($tasks) <= 0)
                             <tr>
-                                <td class="table-text">
-                                    <div>{{ $task-name }}</div>
-                                </td>
-                                <td>
-                                    <form action="/task/{{ $task->id }}" method="POST">
-                                        {{ csrf_field() }}
-                                        {{ method_field('DELETE') }}
-                                        <button>Delete Task</button>
-                                    </form>
-                                </td>
+                                <td colspan="2">empty tasks.</td>
                             </tr>
-                        @endforeach
-                    </tbody>
-                </table>
-            </div>
+                        @endif
+                    @foreach($tasks as $task)
+                        <tr>
+                            <td class="table-text">
+                                <div>{{ $task->name }}</div>
+                            </td>
+                            <td>
+                                <form action="/task/{{ $task->id }}" method="POST">
+                                    {{ csrf_field() }}
+                                    {{ method_field('DELETE') }}
+                                    <button>Delete Task</button>
+                                </form>
+                            </td>
+                        </tr>
+                    @endforeach
+                </tbody>
+            </table>
         </div>
-    @endif
+    </div>
 @Endsection
