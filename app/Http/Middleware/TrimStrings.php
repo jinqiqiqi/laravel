@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Middleware;
+namespace Todoparrot\Http\Middleware;
 
 use Illuminate\Foundation\Http\Middleware\TrimStrings as BaseTrimmer;
 

@@ -11,6 +11,16 @@
 |
 */
 
+// Route::get('/', function () {
+// 	$items = ['Pack luggage', 'Go to airport', 'Arrive in San Juan'];
+// 	// dd($items);
+
+//     return view('welcome');
+// });
+
 Route::get('/', function () {
+	$items = ['Pack luggage', 'Go to airport', 'Arrive in San Juan'];
+	// dd($items);
+
     return view('welcome');
 });
