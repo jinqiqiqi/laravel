@@ -18,9 +18,8 @@
 //     return view('welcome');
 // });
 
-Route::get('/', function () {
-	$items = ['Pack luggage', 'Go to airport', 'Arrive in San Juan'];
-	// dd($items);
+Route::get('/', 'TaskController@index');
 
-    return view('welcome');
-});
+Route::post('/task', 'TaskController@task');
+
+Route::delete('/task/{id}', 'TaskController@delete');
