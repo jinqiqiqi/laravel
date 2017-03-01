@@ -171,11 +171,11 @@ return [
         /*
          * Application Service Providers...
          */
-        Todoparrot\Providers\AppServiceProvider::class,
-        Todoparrot\Providers\AuthServiceProvider::class,
-        // Todoparrot\Providers\BroadcastServiceProvider::class,
-        Todoparrot\Providers\EventServiceProvider::class,
-        Todoparrot\Providers\RouteServiceProvider::class,
+        Furbook\Providers\AppServiceProvider::class,
+        Furbook\Providers\AuthServiceProvider::class,
+        // Furbook\Providers\BroadcastServiceProvider::class,
+        Furbook\Providers\EventServiceProvider::class,
+        Furbook\Providers\RouteServiceProvider::class,
 
     ],
 

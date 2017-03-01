@@ -1,6 +1,6 @@
 <?php
 
-namespace Todoparrot\Exceptions;
+namespace Furbook\Exceptions;
 
 use Exception;
 use Illuminate\Auth\AuthenticationException;

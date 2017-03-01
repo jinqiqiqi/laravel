@@ -1,6 +1,6 @@
 <?php
 
-namespace Todoparrot\Providers;
+namespace Furbook\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

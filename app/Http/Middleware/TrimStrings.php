@@ -1,6 +1,6 @@
 <?php
 
-namespace Todoparrot\Http\Middleware;
+namespace Furbook\Http\Middleware;
 
 use Illuminate\Foundation\Http\Middleware\TrimStrings as BaseTrimmer;
 

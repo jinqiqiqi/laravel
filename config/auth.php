@@ -67,7 +67,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => Todoparrot\User::class,
+            'model' => Furbook\User::class,
         ],
 
         // 'users' => [

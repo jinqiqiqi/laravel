@@ -1,9 +1,9 @@
 <?php
 
-namespace Todoparrot\Http\Controllers\Auth;
+namespace Furbook\Http\Controllers\Auth;
 
-use Todoparrot\User;
-use Todoparrot\Http\Controllers\Controller;
+use Furbook\User;
+use Furbook\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 

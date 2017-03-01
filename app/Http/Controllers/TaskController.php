@@ -1,10 +1,10 @@
 <?php
 
-namespace Todoparrot\Http\Controllers;
+namespace Furbook\Http\Controllers;
 
 use Illuminate\Http\Request;
 // use Illuminate\Validation\Validator;
-use Todoparrot\Task;
+use Furbook\Task;
 use Validator;
 use Log;
 

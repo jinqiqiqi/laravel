@@ -1,6 +1,6 @@
 <?php
 
-namespace Todoparrot;
+namespace Furbook;
 
 use Illuminate\Database\Eloquent\Model;
 

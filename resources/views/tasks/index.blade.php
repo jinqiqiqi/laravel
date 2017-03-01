@@ -32,11 +32,11 @@
                     <th>&nbsp;</th>
                 </thead>
                 <tbody>
-                        @if(count($tasks) <= 0)
-                            <tr>
-                                <td colspan="2">empty tasks.</td>
-                            </tr>
-                        @endif
+                    @if(count($tasks) <= 0)
+                        <tr>
+                            <td colspan="2">empty tasks.</td>
+                        </tr>
+                    @endif
                     @foreach($tasks as $task)
                         <tr>
                             <td class="table-text">
@@ -55,4 +55,4 @@
             </table>
         </div>
     </div>
-@Endsection
+    @Endsection

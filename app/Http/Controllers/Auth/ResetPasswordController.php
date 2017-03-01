@@ -1,8 +1,8 @@
 <?php
 
-namespace Todoparrot\Http\Controllers\Auth;
+namespace Furbook\Http\Controllers\Auth;
 
-use Todoparrot\Http\Controllers\Controller;
+use Furbook\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ResetsPasswords;
 
 class ResetPasswordController extends Controller
